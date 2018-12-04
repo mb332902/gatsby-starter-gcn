@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import logo from '../images/logo.svg'
 
 const Header = styled.header`
-  background: ${props => props.theme.colors.base};
   width: 100%;
   padding: 1.5em 0;
 `
@@ -26,22 +26,27 @@ const Nav = styled.nav`
       margin: 0;
       flex-basis: 100%;
     }
+
+    img {
+      width: 120px;
+      position: relative;
+      top: -13px;
+    }
   }
 
   a {
     text-decoration: none;
-    color: DarkGray;
+    color: #505050;
     font-weight: 600;
     transition: all 0.2s;
-    border-bottom: 2px solid ${props => props.theme.colors.base};
     &:hover {
-      color: white;
+      color: Black;
     }
   }
 `
 
 const activeLinkStyle = {
-  color: 'white',
+  color: 'black',
 }
 
 const Menu = () => {
@@ -51,7 +56,7 @@ const Menu = () => {
         <ul>
           <li>
             <Link to="/" activeStyle={activeLinkStyle}>
-              Home
+              <img src={logo} alt="Dustin Gerken Design"/>
             </Link>
           </li>
           <li>

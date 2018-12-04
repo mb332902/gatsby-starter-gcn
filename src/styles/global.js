@@ -82,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: white;
+    background: #e3e3e3;
     line-height: 1;
     font-size: 100%;
     font-variant-ligatures: none;

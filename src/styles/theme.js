@@ -4,6 +4,7 @@ const theme = {
     secondary: '#e9e9e9', // Medium Gray
     tertiary: '#f3f3f3', // Light Gray
     highlight: '#5b8bf7', // Light Blue
+    background: '#e3e3e3' // Light Gray
   },
   sizes: {
     maxWidth: '1050px',
